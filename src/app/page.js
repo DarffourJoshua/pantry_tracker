@@ -6,13 +6,13 @@ import {lusitana} from './ui/fonts'
 import Image from 'next/image';
 import PantryLogo from './ui/pantry-logo';
 import { useAuth } from './firebase/authContext';
-import "@fontawesome/fontawesome-svg-core/styles.css";
-import { config } from "@fortawesome/fontawesome-svg-core";
-config.autoAddCss = false;
 import { useRouter } from 'next/navigation';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGoogle } from "@fortawesome/free-solid-svg-icons";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faGoogle} from '@fortawesome/free-brands-svg-icons';
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faCheck } from "@fortawesome/free-solid-svg-icons";
+
 
 export default function Page() {
   const { googleSignIn} = useAuth();
