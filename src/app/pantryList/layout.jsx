@@ -1,6 +1,7 @@
 import SideNav from "../ui/sidenav";
 // imp ort { AuthProvider } from "../firebase/authContext";
 
+
 export default function Layout( {children} ) {
     return (
       

@@ -6,7 +6,7 @@ import {lusitana} from './ui/fonts'
 import Image from 'next/image';
 import PantryLogo from './ui/pantry-logo';
 import { useAuth } from './firebase/authContext';
-import "@fortawesome/fontawesome-svg-core/styles.css";
+import "@fontawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 import { useRouter } from 'next/navigation';
@@ -26,7 +26,7 @@ export default function Page() {
       console.log(err)
     }
   }
-  
+
   return (
     
       <main className="flex min-h-screen flex-col p-6"> 
