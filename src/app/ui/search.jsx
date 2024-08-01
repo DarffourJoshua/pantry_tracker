@@ -10,7 +10,7 @@ export default function Search({ placeholder }) {
   const pathname = usePathname(); // get the current path
   const {replace} = useRouter(); // get the router
 
-  //using useDebouncedCallback to debounce the search
+  // using useDebouncedCallback to debounce the search
   const handleSearch = useDebouncedCallback((term) => {
     const params = new URLSearchParams(searchParams);
     params.set('page', '1');
